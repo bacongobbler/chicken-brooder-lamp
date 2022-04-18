@@ -65,10 +65,12 @@ void loop() {
 	// shut off if the brooder lamp goes over the max temperature
 	if (temperature > MAX_TEMPERATURE) {
 		digitalWrite(RELAYPIN, HIGH);
+	}
+
 	// turn it back on if the lamp drops below the min temperature
-	} else if (temperature < MIN_TEMPERATURE) {
+	if (temperature < MIN_TEMPERATURE) {
 		digitalWrite(RELAYPIN, LOW);
 	}
 
-	delay(1000);
+	delay(10000);
 }
