@@ -14,9 +14,9 @@
 // which digital pin is the relay connected to?
 #define RELAYPIN 8
 // what is the maximum temperature we want the brooder lamp to be? (in C)
-#define MAX_TEMPERATURE 35.5
+#define MAX_TEMPERATURE 36.5
 // what is the minimum temperature we want the brooder lamp to be? (in C)
-#define MIN_TEMPERATURE 34.5
+#define MIN_TEMPERATURE 33.5
 
 int samples[NUMSAMPLES];
 
